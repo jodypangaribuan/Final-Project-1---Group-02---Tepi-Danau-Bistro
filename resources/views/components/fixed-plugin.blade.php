@@ -5,7 +5,7 @@
     <div class="card shadow-lg ">
       <div class="card-header pb-0 pt-3 ">
         <div class="{{ (Request::is('rtl') ? 'float-end' : 'float-start') }}">
-          <h5 class="mt-3 mb-0">Dashboard Sipapah Kosa Bangsa </h5>
+          <h5 class="mt-3 mb-0">Options </h5>
           <p>See our dashboard options.</p>
         </div>
         <div class="{{ (Request::is('rtl') ? 'float-start mt-4' : 'float-end mt-4') }}">
@@ -48,7 +48,7 @@
         <div class="form-check form-switch ps-0">
           <input class="form-check-input mt-1 ms-auto  {{ (Request::is('rtl') ? 'float-end' : '') }}"" type="checkbox" checked id="navbarFixed" onclick="navbarFixed(this)">
         </div>
-        
+
       </div>
     </div>
   </div>
