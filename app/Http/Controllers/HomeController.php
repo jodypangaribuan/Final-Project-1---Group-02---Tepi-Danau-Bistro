@@ -37,30 +37,46 @@ class HomeController extends Controller
 
     public function bookTable(Request $request)
     {
-        // Validasi formulir disini jika diperlukan
+        // Validate the form data
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|numeric',
+            'date' => 'required',
+            'time' => 'required',
+            'people' => 'required|numeric',
+            'message' => 'required',
+        ]);
 
-        // Ambil data dari formulir
-        $name = $request->input('name');
-        $email = $request->input('email');
-        $phone = $request->input('phone');
-        $date = $request->input('date');
-        $time = $request->input('time');
-        $people = $request->input('people');
-        $message = $request->input('message');
+        // Extract the form data
+        $name = $validatedData['name'];
+        $email = $validatedData['email'];
+        $phone = $validatedData['phone'];
+        $date = $validatedData['date'];
+        $time = $validatedData['time'];
+        $people = $validatedData['people'];
+        $message = $validatedData['message'];
 
-        // Format pesan untuk dikirim ke WhatsApp
-        $whatsapp_message = "Nama: $name\nEmail: $email\nPhone: $phone\nDate: $date\nTime: $time\n# of People: $people\nMessage: $message";
+        // Format the message for WhatsApp
+        $whatsappMessage = "
+🌟👋 Halo! Saya ingin melakukan reservasi untuk $people orang pada $date 📅 pukul $time 🕰️.
+👤 Nama       : $name
+📧 Email      : $email
+📞 Nomor HP   : $phone
+💬 Pesan      : $message
+🌟 Terima kasih! 🌟
+";
 
-        // Encode pesan untuk URL
-        $encoded_message = urlencode($whatsapp_message);
+        // Encode the message for the URL
+        $encodedMessage = urlencode($whatsappMessage);
 
-        // Nomor WhatsApp tujuan
-        $whatsapp_number = "6281264761015"; // Ganti dengan nomor WhatsApp yang dituju
+        // Target WhatsApp number
+        $whatsappNumber = "6281264761015"; // Replace with the target WhatsApp number
 
-        // URL untuk mengarahkan ke WhatsApp dengan pesan yang disiapkan
-        $whatsapp_url = "https://api.whatsapp.com/send/?phone=$whatsapp_number&text=$encoded_message";
+        // URL to redirect to WhatsApp with the prepared message
+        $whatsappUrl = "https://api.whatsapp.com/send/?phone=$whatsappNumber&text=$encodedMessage";
 
-        // Redirect pengguna ke URL WhatsApp
-        return redirect()->away($whatsapp_url);
+        // Redirect the user to the WhatsApp URL
+        return redirect()->away($whatsappUrl);
     }
 }
