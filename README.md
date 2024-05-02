@@ -10,7 +10,9 @@ to [state the main goal of the project] and provide a [briefly describe the main
 * [List the main features of your project, e.g., "Real-time data processing", "Machine learning algorithms", "User-friendly interface", etc.]
 * [Optional: Add a brief description of each feature]
 
-**Getting Started**
+**Getting Started**)
+
+You can copy and paste this code into your README.md file to add the Laravel logo GIF.
 
 1. **Clone the repository**: Run `git clone https://github.com/your-username/your-project-name.git` to clone the
    repository.
