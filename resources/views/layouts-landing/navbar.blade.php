@@ -20,7 +20,7 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Reservation</a>
+        <a href="#" class="book-a-table-btn scrollto d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a>
 
     </div>
 </header>

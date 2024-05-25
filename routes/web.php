@@ -33,15 +33,18 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Route for the book table page
 Route::get('book-table', [HomeController::class, 'bookTable'])->name('book-table');
 
+// Table
+Route::get('/get-tables', [TableController::class, 'getTables'])->name('get-tables');
+
 // Group of routes that require authentication
 Route::group(['middleware' => 'auth'], function () {
 
-	Route::get('/login', function () {
-		if (Auth::user()) {
-			return redirect('/login');
-		}
+    Route::get('/login', function () {
+        if (Auth::user()) {
+            return redirect('/login');
+        }
 
-	})->name('dashboard');
+    })->name('dashboard');
 
     // Route for the dashboard page
     Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
