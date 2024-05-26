@@ -2,14 +2,10 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\InfoUserController;
 use App\Http\Controllers\JamBukaController;
 use App\Http\Controllers\MenuController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\ResetController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimoniController;
@@ -33,9 +29,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // Route for the book table page
 Route::get('book-table', [HomeController::class, 'bookTable'])->name('book-table');
 
-// Table
-Route::get('/get-tables', [TableController::class, 'getTables'])->name('get-tables');
-
 // Group of routes that require authentication
 Route::group(['middleware' => 'auth'], function () {
 
@@ -43,7 +36,6 @@ Route::group(['middleware' => 'auth'], function () {
         if (Auth::user()) {
             return redirect('/login');
         }
-
     })->name('dashboard');
 
     // Route for the dashboard page
@@ -104,14 +96,6 @@ Route::group(['middleware' => 'auth'], function () {
     // Route for the logout feature
     Route::get('/logout', [SessionsController::class, 'destroy']);
 
-    // Group of routes for the user management feature
-    Route::get('/user-management', [InfoUserController::class, 'userManagement'])->name('user-management');
-    Route::post('/tambah-user', [InfoUserController::class, 'tambahUser'])->name('tambah-user');
-    Route::post('/update-user/{id}', [InfoUserController::class, 'updateUser'])->name('update-user');
-    Route::get('/delete-user/{id}', [InfoUserController::class, 'deleteUser'])->name('delete-user');
-    Route::get('/user-profile', [InfoUserController::class, 'create']);
-    Route::post('/user-profile', [InfoUserController::class, 'store']);
-
     // Route for the sign up page
     Route::get('/login', function () {
         return view('dashboard');
@@ -120,14 +104,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 // Group of routes that do not require authentication
 Route::group(['middleware' => 'guest'], function () {
-    Route::get('/register', [RegisterController::class, 'create']);
-    Route::post('/register', [RegisterController::class, 'store']);
     Route::get('/login', [SessionsController::class, 'create']);
     Route::post('/login-post', [SessionsController::class, 'store']);
-    Route::get('/login/forgot-password', [ResetController::class, 'create']);
-    Route::post('/forgot-password', [ResetController::class, 'sendEmail']);
-    Route::get('/reset-password/{token}', [ResetController::class, 'resetPass'])->name('password.reset');
-    Route::post('/reset-password', [ChangePasswordController::class, 'changePassword'])->name('password.update');
 });
 
 // Route for the login page
