@@ -8,7 +8,6 @@ Website Tepi Danau Bistro adalah proyek akhir pertama mahasiswa Institut Teknolo
 **Fitur Utama**
 
 -   Menampilkan menu dan informasi restoran
--   Sistem reservasi online
 -   Pengelolaan konten oleh admin
 
 **Panduan Memulai**
