@@ -1,4 +1,4 @@
-![Logo](assets/logo.png)
+![Logo](public/assets/logo.png)
 
 # Selamat Datang di Restoran Tepi Danau Bistro Website
 
