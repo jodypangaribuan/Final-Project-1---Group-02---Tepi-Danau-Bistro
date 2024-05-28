@@ -1,17 +1,17 @@
-**Selamat Datang di [Restoran Tepi Danau Bistro Website]**
+**Selamat Datang di Restoran Tepi Danau Bistro Website**
 
 **Gambaran Umum**
-[Nama Proyek Anda] adalah [jelaskan secara singkat proyek Anda dan tujuannya]. Proyek ini bertujuan untuk [nyatakan tujuan utama proyek] dan menyediakan [jelaskan singkat fungsionalitas atau fitur utama].
+Proyek Restoran Tepi Danau Bistro Website adalah proyek yang dibangun oleh mahasiswa Institut Teknologi Del sebagai proyek akhir pertama. Proyek ini bertujuan untuk membantu sebuah restoran yang dimana restoran tersebut belum memiliki website atau penyedia informasi online dan menyediakan fitur yang dimana website ini menyediakan berbagai informasi terakit restoran dan informasi tersebut dapat dikelola oleh admin atau pengurus restoran tersebut.
 
 **Fitur**
 
--   [Daftarkan fitur utama proyek Anda, misalnya, "Pemrosesan data real-time", "Algoritma machine learning", "Antarmuka yang ramah pengguna", dll.]
--   [Opsional: Tambahkan deskripsi singkat untuk setiap fitur]
+-   fitur 1
+-   fitur 2
 
 **Memulai**
 
 1. **Clone repositori**: Jalankan `git clone https://github.com/jodypangaribuan/FinalProject1-Group-02-TepiDanauBistro.git`.
-2. **Pindah ke direktori proyek Laravel dengan menjalankan perintah** `cd [nama_direktori_proyek]`.
+2. **Pindah ke direktori proyek Laravel dengan menjalankan perintah** `cd FinalProject1-Group-02-TepiDanauBistro`.
 3. **Jalankan perintah** `composer install` untuk menginstal semua dependensi yang diperlukan oleh proyek.
     - Jika perintah `composer install` gagal karena versi PHP yang tidak sesuai, coba jalankan `composer install --ignore-platform-reqs=php` untuk mengabaikan persyaratan platform PHP.
 4. **Salin file** `.env.example` menjadi `.env` dengan menjalankan perintah `cp .env.example .env`.
@@ -23,22 +23,7 @@
 9. **Buka browser web Anda dan akses proyek Laravel Anda di** `http://localhost:8000`.
 10. **Jika Anda ingin melihat atau mengekspor data basis data, Anda dapat menjalankan SQL yang telah disediakan pada Google Drive.** Silakan akses tautan Google Drive yang diberikan untuk mendapatkan file SQL tersebut.
 
-**Kontribusi**
-
--   **Gaya kode**: Kami mengikuti [link ke panduan gaya kode, misalnya, PEP 8 untuk Python].
--   **Pelacak masalah**: Laporkan setiap masalah atau bug pada [link ke pelacak masalah, misalnya, GitHub Issues].
--   **Panduan kontributor**: Lihat [link ke panduan kontributor, misalnya, CONTRIBUTING.md].
-
-**Lisensi**
-[Nama Proyek Anda] dilisensikan di bawah [link ke lisensi, misalnya, Lisensi MIT].
-
-**Penghargaan**
-
--   [Daftarkan setiap penghargaan, misalnya, "Terima kasih khusus kepada [Nama] atas kontribusinya"].
-
-**Perubahan**
-
--   [Daftarkan setiap perubahan atau pembaruan yang signifikan pada proyek, misalnya, "Menambahkan dukungan untuk format data baru", "Memperbaiki bug pada pemrosesan data"].
+[Link ke Google Drive](https://drive.google.com/file/d/1G6qIrM94dlBD3p6HCvJVOq8zltuP_VFb/view?usp=sharing)
 
 **Kontak**
 
