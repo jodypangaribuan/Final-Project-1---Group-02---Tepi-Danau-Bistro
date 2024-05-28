@@ -1,4 +1,6 @@
-**Selamat Datang di Restoran Tepi Danau Bistro Website**
+![Logo](assets/logo.png)
+
+# Selamat Datang di Restoran Tepi Danau Bistro Website
 
 **Gambaran Umum**
 Proyek Restoran Tepi Danau Bistro Website adalah proyek yang dibangun oleh mahasiswa Institut Teknologi Del sebagai proyek akhir pertama. Proyek ini bertujuan untuk membantu sebuah restoran yang dimana restoran tersebut belum memiliki website atau penyedia informasi online dan menyediakan fitur yang dimana website ini menyediakan berbagai informasi terakit restoran dan informasi tersebut dapat dikelola oleh admin atau pengurus restoran tersebut.
@@ -29,6 +31,3 @@ Proyek Restoran Tepi Danau Bistro Website adalah proyek yang dibangun oleh mahas
 
 -   **Email**: jodypangaribuan@gmail.com
 -   **GitHub**: https://github.com/jodypangaribuan
-
-**Plat Nomor**
-[Sisipkan gambar atau GIF plat nomor yang menarik atau kreatif]
