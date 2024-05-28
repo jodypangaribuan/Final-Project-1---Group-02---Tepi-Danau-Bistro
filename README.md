@@ -1,55 +1,49 @@
-**Welcome to [Restoran Tepi Danau Bistro Website]**
+**Selamat Datang di [Restoran Tepi Danau Bistro Website]**
 
-**Overview**
-[Your Project Name] is a [briefly describe your project and its purpose]. This project aims to [state the main goal of the project] and provide a [briefly describe the main functionality or features].
+**Gambaran Umum**
+[Nama Proyek Anda] adalah [jelaskan secara singkat proyek Anda dan tujuannya]. Proyek ini bertujuan untuk [nyatakan tujuan utama proyek] dan menyediakan [jelaskan singkat fungsionalitas atau fitur utama].
 
-**Features**
+**Fitur**
 
--   [List the main features of your project, e.g., "Real-time data processing", "Machine learning algorithms", "User-friendly interface", etc.]
--   [Optional: Add a brief description of each feature]
+-   [Daftarkan fitur utama proyek Anda, misalnya, "Pemrosesan data real-time", "Algoritma machine learning", "Antarmuka yang ramah pengguna", dll.]
+-   [Opsional: Tambahkan deskripsi singkat untuk setiap fitur]
 
-**Getting Started**)
-You can copy and paste this code into your README.md file to add the Laravel logo GIF.
+**Memulai**
 
-1. **Clone the repository**: Run `git clone [URL_repositori]`.
+1. **Clone repositori**: Jalankan `git clone https://github.com/jodypangaribuan/FinalProject1-Group-02-TepiDanauBistro.git`.
 2. **Pindah ke direktori proyek Laravel dengan menjalankan perintah** `cd [nama_direktori_proyek]`.
 3. **Jalankan perintah** `composer install` untuk menginstal semua dependensi yang diperlukan oleh proyek.
-
--   Jika perintah `composer install` gagal karena versi PHP yang tidak sesuai, coba jalankan `composer install --ignore-platform-reqs=php` untuk mengabaikan persyaratan platform PHP.
-
+    - Jika perintah `composer install` gagal karena versi PHP yang tidak sesuai, coba jalankan `composer install --ignore-platform-reqs=php` untuk mengabaikan persyaratan platform PHP.
 4. **Salin file** `.env.example` menjadi `.env` dengan menjalankan perintah `cp .env.example .env`.
 5. **Buka file** `.env` dan atur konfigurasi database, email, dan pengaturan lainnya sesuai kebutuhan proyek Anda.
 6. **Jalankan perintah** `php artisan key:generate` untuk membangkitkan kunci aplikasi Laravel.
 7. **Jalankan perintah** `php artisan migrate` untuk menjalankan migrasi database.
-
--   Jika diminta, ketik `yes` untuk mengkonfirmasi migrasi.
-
+    - Jika diminta, ketik `yes` untuk mengkonfirmasi migrasi.
 8. **Jalankan server development Laravel dengan perintah** `php artisan serve`.
 9. **Buka browser web Anda dan akses proyek Laravel Anda di** `http://localhost:8000`.
 10. **Jika Anda ingin melihat atau mengekspor data basis data, Anda dapat menjalankan SQL yang telah disediakan pada Google Drive.** Silakan akses tautan Google Drive yang diberikan untuk mendapatkan file SQL tersebut.
 
-**Contributing**
+**Kontribusi**
 
--   **Code style**: We follow the [link to code style guide, e.g., PEP 8 for Python].
--   **Issue tracker**: Report any issues or bugs on [link to issue tracker, e.g., GitHub Issues].
--   **Contributor guidelines**: Check out our [link to contributor guidelines, e.g., CONTRIBUTING.md].
+-   **Gaya kode**: Kami mengikuti [link ke panduan gaya kode, misalnya, PEP 8 untuk Python].
+-   **Pelacak masalah**: Laporkan setiap masalah atau bug pada [link ke pelacak masalah, misalnya, GitHub Issues].
+-   **Panduan kontributor**: Lihat [link ke panduan kontributor, misalnya, CONTRIBUTING.md].
 
-**License**
-[Your Project Name] is licensed under the [link to license, e.g., MIT License].
+**Lisensi**
+[Nama Proyek Anda] dilisensikan di bawah [link ke lisensi, misalnya, Lisensi MIT].
 
-**Acknowledgments**
+**Penghargaan**
 
--   [List any acknowledgments, e.g., "Special thanks to [Name] for their contributions"].
+-   [Daftarkan setiap penghargaan, misalnya, "Terima kasih khusus kepada [Nama] atas kontribusinya"].
 
-**Changelog**
+**Perubahan**
 
--   [List any notable changes or updates to the project, e.g., "Added support for new data format", "Fixed bug with data processing"].
+-   [Daftarkan setiap perubahan atau pembaruan yang signifikan pada proyek, misalnya, "Menambahkan dukungan untuk format data baru", "Memperbaiki bug pada pemrosesan data"].
 
-**Contact**
+**Kontak**
 
--   **Email**: [Your email address]
--   **Twitter**: [Your Twitter handle]
--   **GitHub**: [Your GitHub profile]
+-   **Email**: jodypangaribuan@gmail.com
+-   **GitHub**: https://github.com/jodypangaribuan
 
-**License Plate**
-[Insert a fun or creative license plate image or GIF]
+**Plat Nomor**
+[Sisipkan gambar atau GIF plat nomor yang menarik atau kreatif]
