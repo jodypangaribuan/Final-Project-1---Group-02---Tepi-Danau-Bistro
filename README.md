@@ -1,33 +1,59 @@
 ![Logo](public/assets/logo.png)
 
-# Selamat Datang di Restoran Tepi Danau Bistro Website
+# Selamat Datang di Website Tepi Danau Bistro
 
 **Gambaran Umum**
-Proyek Restoran Tepi Danau Bistro Website adalah proyek yang dibangun oleh mahasiswa Institut Teknologi Del sebagai proyek akhir pertama. Proyek ini bertujuan untuk membantu sebuah restoran yang dimana restoran tersebut belum memiliki website atau penyedia informasi online dan menyediakan fitur yang dimana website ini menyediakan berbagai informasi terakit restoran dan informasi tersebut dapat dikelola oleh admin atau pengurus restoran tersebut.
+Website Tepi Danau Bistro adalah proyek akhir pertama mahasiswa Institut Teknologi Del, dirancang untuk membantu restoran yang belum memiliki kehadiran online. Website ini menyediakan berbagai informasi terkait restoran dan memungkinkan pengelolaan data oleh admin restoran.
 
-**Fitur**
+**Fitur Utama**
 
--   fitur 1
--   fitur 2
+-   Menampilkan menu dan informasi restoran
+-   Sistem reservasi online
+-   Pengelolaan konten oleh admin
 
-**Memulai**
+**Panduan Memulai**
 
-1. **Clone repositori**: Jalankan `git clone https://github.com/jodypangaribuan/FinalProject1-Group-02-TepiDanauBistro.git`.
-2. **Pindah ke direktori proyek Laravel dengan menjalankan perintah** `cd FinalProject1-Group-02-TepiDanauBistro`.
-3. **Jalankan perintah** `composer install` untuk menginstal semua dependensi yang diperlukan oleh proyek.
-    - Jika perintah `composer install` gagal karena versi PHP yang tidak sesuai, coba jalankan `composer install --ignore-platform-reqs=php` untuk mengabaikan persyaratan platform PHP.
-4. **Salin file** `.env.example` menjadi `.env` dengan menjalankan perintah `cp .env.example .env`.
-5. **Buka file** `.env` dan atur konfigurasi database, email, dan pengaturan lainnya sesuai kebutuhan proyek Anda.
-6. **Jalankan perintah** `php artisan key:generate` untuk membangkitkan kunci aplikasi Laravel.
-7. **Jalankan perintah** `php artisan migrate` untuk menjalankan migrasi database.
-    - Jika diminta, ketik `yes` untuk mengkonfirmasi migrasi.
-8. **Jalankan server development Laravel dengan perintah** `php artisan serve`.
-9. **Buka browser web Anda dan akses proyek Laravel Anda di** `http://localhost:8000`.
-10. **Jika Anda ingin melihat atau mengekspor data basis data, Anda dapat menjalankan SQL yang telah disediakan pada Google Drive.** Silakan akses tautan Google Drive yang diberikan untuk mendapatkan file SQL tersebut.
+1. **Clone repositori**:
+    ```sh
+    git clone https://github.com/jodypangaribuan/FinalProject1-Group-02-TepiDanauBistro.git
+    ```
+2. **Pindah ke direktori proyek**:
+    ```sh
+    cd FinalProject1-Group-02-TepiDanauBistro
+    ```
+3. **Instal dependensi dengan Composer**:
+    ```sh
+    composer install
+    ```
+    - Jika terjadi kesalahan versi PHP, gunakan:
+    ```sh
+    composer install --ignore-platform-reqs=php
+    ```
+4. **Salin file konfigurasi**:
+    ```sh
+    cp .env.example .env
+    ```
+5. **Sesuaikan konfigurasi dalam file `.env`** untuk database, email, dll.
+6. **Generate kunci aplikasi Laravel**:
+    ```sh
+    php artisan key:generate
+    ```
+7. **Jalankan migrasi database**:
+    ```sh
+    php artisan migrate
+    ```
+    - Ketik `yes` jika diminta konfirmasi.
+8. **Jalankan server development**:
+    ```sh
+    php artisan serve
+    ```
+9. **Akses proyek di browser**:
+   [http://localhost:8000](http://localhost:8000)
 
-[Link ke Google Drive](https://drive.google.com/file/d/1G6qIrM94dlBD3p6HCvJVOq8zltuP_VFb/view?usp=sharing)
+10. **Untuk melihat atau mengekspor data database**, gunakan file SQL yang tersedia di Google Drive:
+    [Link ke Google Drive](https://drive.google.com/file/d/1G6qIrM94dlBD3p6HCvJVOq8zltuP_VFb/view?usp=sharing)
 
 **Kontak**
 
--   **Email**: jodypangaribuan@gmail.com
--   **GitHub**: https://github.com/jodypangaribuan
+-   **Email**: [jodypangaribuan@gmail.com](mailto:jodypangaribuan@gmail.com)
+-   **GitHub**: [jodypangaribuan](https://github.com/jodypangaribuan)
