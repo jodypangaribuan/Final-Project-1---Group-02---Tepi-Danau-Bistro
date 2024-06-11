@@ -26,7 +26,7 @@ Website Tepi Danau Bistro adalah proyek akhir pertama mahasiswa Institut Teknolo
     ```
     - Jika terjadi kesalahan versi PHP, gunakan:
     ```sh
-    composer install --ignore-platform-reqs=php
+    composer install --ignore-platform-req=ext-gd
     ```
 4. **Salin file konfigurasi**:
     ```sh
