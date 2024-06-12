@@ -34,6 +34,8 @@
                     <span class="nav-link-text ms-1">Dashboard</span>
                 </a>
             </li>
+            @if (Auth::user()->role == 'Admin')
+
             <li class="nav-item mt-2">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Menu</h6>
             </li>
@@ -96,6 +98,26 @@
                     <span class="nav-link-text ms-1">Team</span>
                 </a>
             </li>
+            <li class="nav-item pb-2">
+                <a class="nav-link {{ (Request::is('table') ? 'active' : '') }}" href="{{ url('table') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i style="font-size: 1rem;" class="fas fa-lg fa-users ps-2 pe-2 text-center text-dark {{ (Request::is('table') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Table</span>
+                </a>
+            </li>
+            @endif
+
+            @if (Auth::user()->role == 'Admin' || Auth::user()->role == 'User')
+            <li class="nav-item pb-2">
+                <a class="nav-link {{ (Request::is('reservation') ? 'active' : '') }}" href="{{ url('reservation') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i style="font-size: 1rem;" class="fas fa-lg fa-book-open ps-2 pe-2 text-center text-dark {{ (Request::is('reservation') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Reservation</span>
+                </a>
+            </li>
+            @endif
         </ul>
     </div>
 

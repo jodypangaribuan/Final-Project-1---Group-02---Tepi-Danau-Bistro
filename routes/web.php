@@ -6,7 +6,9 @@ use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JamBukaController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\SessionsController;
+use App\Http\Controllers\TableController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimoniController;
 use Illuminate\Support\Facades\Auth;
@@ -25,6 +27,8 @@ use Illuminate\Support\Facades\Route;
 
 // Route for the home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('register', [SessionsController::class, 'register'])->name('register');
+Route::post('register', [SessionsController::class, 'registerProses'])->name('registerProses');
 
 // Route for the book table page
 Route::get('book-table', [HomeController::class, 'bookTable'])->name('book-table');
@@ -91,6 +95,19 @@ Route::group(['middleware' => 'auth'], function () {
         Route::post('/store', [TeamController::class, 'store'])->name('team-store');
         Route::post('/update/{id}', [TeamController::class, 'update'])->name('team-update');
         Route::get('/delete/{id}', [TeamController::class, 'destroy'])->name('team-delete');
+    });
+
+    Route::prefix('table')->group(function () {
+        Route::get('/', [TableController::class, 'index'])->name('table');
+        Route::post('/store', [TableController::class, 'store'])->name('table-store');
+        Route::post('/update/{id}', [TableController::class, 'update'])->name('table-update');
+        Route::get('/delete/{id}', [TableController::class, 'destroy'])->name('table-delete');
+    });
+
+    Route::prefix('reservation')->group(function () {
+        Route::get('/', [ReservationController::class, 'index'])->name('reservation');
+        Route::get('finish/{id}', [ReservationController::class, 'finish'])->name('reservation-finish');
+        Route::get('destroy/{id}', [ReservationController::class, 'destroy'])->name('reservation-destroy');
     });
 
     // Route for the logout feature

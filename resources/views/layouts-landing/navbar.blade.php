@@ -20,7 +20,12 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a>
+        {{-- <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a> --}}
+        @if (Auth::check() != null)
+           <a href="/dashboard" class="book-a-table-btn scrollto d-none d-lg-flex" >Dashboard</a>
+        @else
+            <a href="/login" class="book-a-table-btn scrollto d-none d-lg-flex" >Login</a>
+        @endif
 
     </div>
 </header>

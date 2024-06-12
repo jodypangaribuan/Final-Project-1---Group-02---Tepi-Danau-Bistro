@@ -63,6 +63,10 @@
                                 <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2  shadow-sm">
                                     Sign in
                                 </button>
+                                <br>
+                                <center>
+                                    <a href="/register" class="text-white">Register</a>
+                                </center>
                             </form>
                         </div>
                     </div>
